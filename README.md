@@ -1,6 +1,6 @@
-<p align="center"><img src="logo.png" alt="mcp-server-python" width="120"></p>
-
 # MCP Server (Python) [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/mcp-server-python/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/mcp-server-python)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
+
+<p align="center"><img src="logo.png" alt="mcp-server-python" width="120"></p>
 
 A starter MCP (Model Context Protocol) server built with Python and FastMCP. Includes example tools, resources, and prompts.
 
