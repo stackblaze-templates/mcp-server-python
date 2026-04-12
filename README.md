@@ -1,33 +1,35 @@
 # MCP Server (Python)
 
-A starter MCP (Model Context Protocol) server built with Python and FastMCP.
+[![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com)
+[![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/mcp-server-python/actions)
+[![License](https://img.shields.io/github/license/stackblaze-templates/mcp-server-python)](LICENSE)
+
+A starter MCP (Model Context Protocol) server built with Python and FastMCP. Includes example tools, resources, and prompts.
+
+> **Credits**: Built on [MCP Server (Python)](https://modelcontextprotocol.io) by [Anthropic](https://github.com/modelcontextprotocol). All trademarks belong to their respective owners.
+
+## Deploy on StackBlaze
+
+[![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
+
+This template includes a `stackblaze.yaml` for one-click deployment on [StackBlaze](https://stackblaze.com).
 
 ## Local Development
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-pip install -r requirements.txt
-python -m src.server
+docker compose up
 ```
 
-## Included Examples
+See the project files for configuration details.
 
-- **Tool**: `hello` — Say hello to someone
-- **Resource**: `info://server` — Get server info
-- **Prompt**: `greeting_prompt` — Generate a greeting
+---
 
-## Adding Tools
+### Maintained by [StackBlaze](https://stackblaze.com)
 
-Edit `src/server.py` to add new tools, resources, and prompts:
+This template is actively maintained by StackBlaze. We perform **weekly automated checks** to ensure:
 
-```python
-@mcp.tool()
-def my_tool(param: str) -> str:
-    """Description of what this tool does."""
-    return f"Result: {param}"
-```
+- **Up-to-date dependencies** — frameworks, libraries, and base images are kept current
+- **Security scanning** — continuous monitoring for known vulnerabilities and CVEs
+- **Best practices** — configurations follow current recommendations from upstream projects
 
-## Deploy on StackBlaze
-
-This template includes a `stackblaze.yaml` for deploying the MCP server with SSE transport.
+Found an issue? [Open a ticket](https://github.com/stackblaze-templates/mcp-server-python/issues).
